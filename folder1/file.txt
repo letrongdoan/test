@@ -1,0 +1,260 @@
+Cập nhật dữ liệu của một bảng bao gồm:
+các thao tác thêm, sửa và xóa dữ liệu của bảng
+các mô tả cho các cột của bảng
+dữ liệu được tổ chức, lưu trữ trong CSDL
+tìm kiếm dữ liệu và kết xuất ra thông tin cần tìm
+CSDL quan hệ là?
+tập hợp các bản dữ liệu không có liên quan với nhau
+tập hợp các bản dữ liệu có liên quan với nhau
+ thực hiện các thao tác thêm, sửa, xóa
+tìm kiếm dữ liệu và kết xuất thông tin
+ Truy vấn trong CSDL quan hệ là:
+Tìm kiếm dữ liệu và kết xuất ra thông tin cần tìm
+Thao tác thêm, sửa, xóa
+ Tạo mối quan hệ giữa các bảng
+ Ràng buộc dữ liệu
+Phát biểu nào sau đây là SAI về các ràng buộc dữ liệu trong CSDL quan hệ:
+Trong một bảng, không có hai bản ghi nào giống nhau hoàn toàn
+Trong một bảng, mỗi trường có một tên để phân biệt với tất cả các trường khác
+Mỗi bảng có một tên để phân biệt với các bảng khác trong cùng CSDL
+ Mỗi ô của bảng chứa một hay nhiều giá trị
+ Chọn phát biểu ĐÚNG  trong các phát biểu sau:
+Nếu hai bản ghi khác nhau thì giá trị khóa của chúng phải khác nhau
+ Trong CSDL quan hệ, mỗi bảng chỉ có 1 khóa
+ Khóa của một bảng chỉ là một trường
+ Không thể cập nhật dữ liệu cho một bảng khi đã chọn khóa
+Trong một bảng gồm các trường: CCCD, Họ và tên, Ngày sinh, Điểm tin. Ta chọn trường nào sau đây làm khóa chính:
+CCCD	
+Họ và tên	
+Ngày sinh	
+Điểm tin
+Khái niệm "khóa ngoài" của một bảng:
+Một trường (hay một số trường) của bảng này và đồng thời là khóa của một bảng khác
+Một trường trong bảng được sử dụng để xác định các giá trị duy nhất của mỗi hàng
+Một trường trong bảng chứa giá trị ngày tháng
+Một trường trong bảng chứa giá trị số
+Liên kết giữa hai bảng trong CSDL được thực hiện thông qua cặp
+khóa chính – khóa ngoài
+khóa chính – khóa chính
+khóa ngoài – khóa ngoài
+khóa trong – khóa phụ
+Để tạo biểu mẫu ta chọn đối tượng nào trên bảng chọn đối tượng?
+Queries
+Forms
+Tables
+Reports
+Trong Access, ta có thể sử dụng biểu mẫu để:
+Tính toán cho các trường tính toán
+Sửa cấu trúc bảng
+ Xem, nhập và sửa dữ liệu
+Lập báo cáo
+Trong Access, muốn tạo biểu mẫu theo cách dùng thuật sĩ, ta chọn thẻ Create rồi trên thanh công cụ ta chọn lệnh:
+Form Design
+Form Wizard	
+Blank Form
+Form
+ Muốn nhanh chóng có được biểu mẫu theo ý mình, ta có thể
+dùng công cụ thiết kế biểu mẫu tự động, sau đó điều chỉnh thêm để có một biểu mẫu thân thiện, thuận tiện hơn trong sử dụng
+dùng biểu mẫu có sẵn trên phần mềm ứng dụng
+sử dụng khóa ngoài của bảng để thực hiện ghép nối dữ liệu hai hàng với nhau
+sử dụng khóa chính của bảng để thực hiện ghép nối dữ liệu hai bảng với nhau
+ Các hệ quản trị CSDL quan hệ thường cung cấp 
+công cụ tạo lập nhanh chóng những biểu mẫu cho xem dữ liệu
+những biểu mẫu hiển thị 
+các thuộc tính của đối tượng
+ngôn ngữ lập trình
+Phát biểu nào sau đây là sai?
+Việc cập nhật dữ liệu trong biểu mẫu thực chất là cập nhật dữ liệu trên bảng dữ liệu nguồn
+Việc nhập dữ liệu bằng cách sử dụng biểu mẫu sẽ thuận tiện hơn, nhanh hơn, ít sai sót hơn
+Có thể sử dụng bảng ở chế độ trang dữ liệu để cập nhật dữ liệu trực tiếp
+Khi tạo biểu mẫu để nhập dữ liệu thì bắt buộc phải xác định hành động cho biểu mẫu
+Truy vấn CSDL là:
+Một tập hợp các bảng dữ liệu có liên quan với nhau
+Một phát biểu thể hiện yêu cầu của người dùng đối với CSDL
+Là cung cấp một khuôn dạng thuận tiện để nhập và sửa dữ liệu
+Cung cấp các nút lệnh để người dùng có thể sử dụng
+ Ngôn ngữ truy vấn CSDL phổ biến hiện nay là:
+ Access	
+ Excel	
+Word	
+ SQL
+ Trong SQL, ngôn ngữ định nghĩa dữ liệu bao gồm các chức năng?
+ Tạo, sửa và xóa cấu trúc quan hệ. Bảo mật và quyền truy nhập. 
+ Bảo mật và quyền truy nhập. 
+ Tạo, sửa và xóa cấu trúc quan hệ. Thêm cột, sửa cột và xoá cột 
+ Tạo, sửa và xóa các bộ quan hệ. Bảo mật và quyền truy nhập.
+Cấu trúc cơ bảnCâu truy vấn vào một bảng dữ liệu như sau:   SELECT danh_sách_các_trường FROM tên_bảng [WHERE biểu_thức_điều_kiện] Trong đó danh sách các trường được liệt kê các tên trường ngăn cách nhau bởi dấu nào?
+dấu ba chấm	
+dấu chấm	
+dấu chấm phẩy	
+dấu phẩy
+ Em hãy điền vào chỗ trống (…) cho phát biểu dưới đây: “ Khi thực hiện cácCâu truy vấn, hệ quản trị CSDL sẽ coi tên trường là biến trong chương trình xử lí, do vậy, nếu tên trường có chứa dấu cách thì cần phải dùng các dấu …… để đánh dấu bắt đầu và kết thúc tên trường.”
+( ) 
+‘ ’
+[ ]
+“ ”
+Trong mẫuCâu truy vấn của SQL, em hãy cho biết mệnh đề WHERE dùng để làm gì?
+Xác định điều kiện lọc dữ liệu
+Xác định dữ liệu được lấy từ đâu
+Sửa dữ liệu trong bảng	
+Xác định thông tin ta muốn hiển thị
+Trong mẫuCâu truy vấn của SQL, em hãy cho biết mệnh đề SELECT dùng để làm gì?
+Xác định điều kiện lọc dữ liệu	
+Thêm dữ liệu vào bảng
+Xác định dữ liệu được lấy từ đâu	
+Xác định thông tin ta muốn hiển thị
+Trong mẫuCâu truy vấn của SQL, em hãy cho biết mệnh đề FROM dùng để làm gì?
+Xác định điều kiện lọc dữ liệu	
+Xác định dữ liệu được lấy từ đâu
+Xác định thông tin ta muốn hiển thị	
+Xóa dữ liệu trong bảng
+Trong quá trình phát triển ứng dụng, truy vấn CSDL có vai trò quan trọng như thế nào?
+Chỉ dùng để thêm dữ liệu mới	
+Đảm bảo tính bảo mật của CSDL
+ Liên kết dữ liệu từ nhiều bảng khác nhau
+Giữ cho hệ thống hoạt động ổn định
+Hệ thống quản lí học sinh của trường em là một hệ CSDL nào?
+Hệ CSDL phân tán		
+Hệ CSDL khách - chủ
+Hệ CSDL tập trung		
+Hệ CSDL cá nhân
+Cơ sở dữ liệu tập trung là gì?
+CSDL tập trung là tập hợp dữ liệu được phân tán trên các máy tính khác nhau
+ CSDL tập trung có toàn bộ dữ liệu được lưu trữ trên một máy tính
+ các thành phần của CSDL tương tác với nhau tạo nên hệ thống gồm thành phần yêu cầu tài nguyên và thành phần cấp tài nguyên.
+những hệ thống cho phép người dùng truy cập không chỉ dữ liệu đặt tại chỗ mà những dữ liệu để ở xa.
+ Các kiến trúc phổ biến của hệ CSDL tập trung là:
+Kiến trúc khách - chủ mà CSDL thường đặt trên một máy chủ
+Kiến trúc khách - chủ, kiến trúc ngang hàng
+ Kiến trúc khách - chủ mà CSDL đặt trên nhiều máy chủ
+Kiến trúc ngang hàng
+Các kiến trúc phổ biến của hệ CSDL phân tán là:
+Kiến trúc khách-chủ, kiến trúc tầng 1, kiến trúc tầng 2, kiến túc tầng 3
+Kiến trúc khách – chủ, kiến trúc ngang hàng
+Kiến trúc khách -chủ
+Kiến trúc ngang hàng
+Trong cácCâu sau đây,Câu nào đúng?
+CSDL luôn chỉ được lưu trữ và khái thác tại một máy chủ.
+Trong hệ CSDL tập trung, việc quản lí và cập nhật dữ liệu dễ dàng hơn so với hệ CSDL phân tán.
+Trong tất cả các hệ CSDL, nếu có sự cố không truy cập được một máy chủ CSDL thì toàn bộ hệ thống CSDL đó ngừng hoạt động.
+Một hệ CSDL tập trung đắt hơn  so với một hệ CSDL phân tán vì nó phức tạp hơn nhiều.
+Phát biểu nào ĐÚNG khi nói về hệ CSDL tập trung?
+Hệ CSDL tập trung khó khăn hơn trong đảm bảo tính nhất quán dữ liệu và tính an ninh
+Hệ CSDL tập trung chi phí cao hơn hệ CSDL phân tán
+Trong quá trình khai thác, nếu hệ CSDL tập trung gặp sự cố thì các chương trình ứng dụng CSDL không thể chạy được
+Hệ CSDL tập trung có thể cho nhiều người truy cập cùng lúc
+Các yếu tố tham gia trong việc bảo mật hệ thống như mật khẩu, mã hoá thông tin cần phải
+Không được thay đổi để đảm bảo tính nhất quán
+Chỉ nên thay đổi nếu người dùng có yêu cầu
+Phải thường xuyên thay đổi để tằng cường tính bảo mật
+Chỉ nên thay đổi một lần sau khi người dùng đăng nhập vào hệ thống lần đầu tiên.
+Bảo vệ sự an toàn của hệ CSDL là rất quan trọng vì:
+Bất kì một hỏng hóc hay mất mát nào cũng sẽ ảnh hưởng đến hoạt động hằng ngày của một tổ chức và hiệu suất làm việc của mọi người
+Rất nhiều loại dữ liệu được tải về giữ trên các máy cục bộ để khai thác
+Một bộ sưu tập rất lớn về các loại dữ liệu tác nghiệp 
+Truy xuất vào cơ sở dữ liệu bằng nhiều ngôn ngữ thao tác dữ liệu khác nhau
+ Thông thường, người dùng muốn truy cập vào hệ CSDL cần cung cấp
+Hình ảnh
+Tên tài khoản và mật khẩu
+Họ tên người dùng
+Chữ ký
+Phát biểu nào dưới đây không phải là bảo mật thông tin trong hệ CSDL?
+Khống chế số người sử dụng CSDL
+Hạn chế tối đa các sai sót của người dùng
+Đảm bảo thông tin không bị mất hoặc bị thay đổi ngoài ý muốn
+Ngăn chặn các truy cập không được phép
+Phát biểu nào dưới đây SAI khi nói về mã hoá thông tin?
+Các thông tin quan trọng và nhạy cảm nên lưu trữ dưới dạng mã hoá
+Mã hoá thông tin để giảm khả năng rò rỉ thông tin
+Nén dữ liệu cũng góp phần tăng cường tính bảo mật của dữ liệu
+Các thông tin sẽ được an toàn tuyệt đối sau khi đã được mã hoá
+Access là gì?
+Phần mềm hệ quản trị CSDL	
+Phần mềm trò chơi
+Phần mềm hệ thống	
+Thiết bị phần cứng
+Trong cửa sổ làm việc Access các thẻ (tab): File, Home, Create, External Data, Database Tools… thuộc:
+Vùng nút lệnh
+Vùng điều hướng
+Vùng làm việc
+Vùng thay đổi khung nhìn
+Vùng điều hướng của cửa sổ làm việc của Access hiển thị những gì?
+Các thẻ File, Home, Create, External Data…
+Các đối tượng trong CSDL
+Các nút lệnh để thay đổi khung nhìn
+Nội dung của đối tượng
+Có mấy khung nhìn bảng:
+2
+3
+4
+5
+Một cơ sở dữ liệu của Acess 365 có bao nhiêu thành phần trong một cửa sở làm việc?
+1 thành phần duy nhất là vùng nút lệnh
+4 thành phần : vùng nút lệnh, vùng điều hướng, vùng làm việc và vùng thay đổi khung nhìn
+6 thành phần : Tables, Queries, Forms, Reports, Macros, Pages
+7 thành phần : Tables, Queries, Forms, Reports, Macros, Pages, Modules
+Để tạo cơ sở dữ liệu mới từ Blank desktop database tại màn hình khởi động Access, ta có các thao tác sau:  (1). Nháy chuột chọn Blank desktop database (2). Chọn File\New (3). Nhấn nút lệnh Create Trình tự thực hiện các thao tác là:
+(1)  (2) (3)
+(2)  (1) (3)	
+ (3)  (2) (1)
+(1)  (3) (2)
+Một bảng điểm học sinh trong Access có các cột chứa điểm “Toán”, “Tin học” các cột này ta chọn kiểu dữ liệu nào?
+AutoNumber
+Number
+ Long Text
+Yes/No
+Trong khung nhìn thiết kế bảng, để chọn kiểu dữ liệu cho 1 trường (cột) ta chọn ở cột nào?
+Field Properties
+Field Name
+ Data Type	
+Description
+Để nhập dữ liệu cho bảng, ta phải hiển thị bảng ở:
+khung nhìn thiết kế
+khung nhìn bảng dữ liệu
+khung nhìn thiết kế và khung nhìn bảng dữ liệu
+bất kì khung nhìn nào cũng được
+Trong Access, để tạo đối tượng mới ta nháy chuột chọn thẻ:
+File
+Home
+Create
+Database Tools
+Ở khung nhìn thiết kế, để chọn một cột làm khóa chính, ta chọn cột đó rồi nháy vào nút lệnh:
+Delete Rows	
+Inser Rows	
+Insert Colunns	
+Primary Key
+Trong Access nói riêng và CSDL quan hệ nói chung, giữa hai bảng chỉ có mối quan hệ:
+một – một (1-1)	
+ một – nhiều (1-∞)
+một – một (1-1) hoặc một – nhiều (1-∞)
+ một – một (1-1) và một – nhiều (1-∞)
+ Điều kiện cần để tạo được liên kết là
+ Phải có ít nhất hai bảng
+ Phải có ít nhất một bảng và một mẫu hỏi
+ Phải có ít nhất một bảng mà một biểu mẫu	
+ Tổng số bảng và mẫu hỏi ít nhất là 2
+ Muốn xóa liên kết giữa hai bảng, trong cửa sổ Relationships ta thực hiện
+ Chọn hai bảng và nhấn phím Delete
+ Chọn đường liên kết giữa hai bảng đó và nhấn phím Delete
+ Chọn tất cả các bảng và nhấn phím Delete
+ Nháy nút lệnh Edit Relationship
+ Điều kiện để tạo mối liên kết giữa hai bảng là
+ Trường liên kết của hai bảng phải có tên giống nhau và cùng kiểu dữ liệu
+ Trường liên kết của hai bảng phải là chữ hoa, có cùng kiểu dữ liệu
+ Trường liên kết của hai bảng phải là kiểu dữ liệu số
+ Trường liên kết của hai bảng phải khác nhau
+ Để tạo quan hệ giữa hai bảng thì ta làm sao?
+ Kéo thả trường khóa ngoài của bảng con vào trường khóa chính của bảng mẹ
+ Kéo thả trường khóa ngoài của bảng con vào 1 trường bất kì của bảng mẹ
+ Kéo thả trường khóa chính của bảng mẹ vào 1 trường bất kì của bảng con
+ Kéo thả 1 trường của bảng con vào 1 trường của bảng mẹ
+ Nhận định nào sau đây là SAI?
+ Để xóa một liên kết, nháy đúp vào đường nối thể hiện liên kết để chọn nó rồi nhấn phím Delete
+ Để xóa một liên kết, nháy chuột vào đường nối thể hiện liên kết để chọn nó rồi nhấn phím Delete
+ Để sửa liên kết, nháy đúp vào đường nối thể hiện liên kết để mở lại hộp thoại Edit Relationships.
+ Để mở vùng làm việc với các mối quan hệ, ta chọn Database Tools\Relationships
+ Nội dung nào sau đây SAI về liên kết các bảng trong cơ sở dữ liệu?
+ Access có trình tiện ích Lookout Wizard giúp thiết lập mối quan hệ khóa ngoài và khóa chính giữa hai bảng
+ Một bảng có thể liên kết với nhiều bảng khác
+ Các thao tác thiết lập, chỉnh sửa, xóa mối quan hệ giữa hai bảng trong CSDL bắt đầu bằng chọn Database Tools\ Relationships
+ Thiết lập kiểu dữ liệu từ tra cứu sẽ đảm bảo toàn vẹn tham chiếu
