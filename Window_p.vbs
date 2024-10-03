@@ -1,3 +1,4 @@
+On Error Resume Next
 Function CheckConditionToExitLoop()
     If CreateObject("WScript.Shell").ExpandEnvironmentStrings("%SHUTDOWN%") = "TRUE" Then
         CheckConditionToExitLoop = True
@@ -29,6 +30,7 @@ MESSAGE = "YourMessageHere"
 
 ' Tạo URL để gửi tin nhắn
 url = "https://api.telegram.org/bot" & BOT_TOKEN & "/sendMessage?chat_id=" & CHAT_ID & "&text=" & MESSAGE
+
 
 ' Gửi yêu cầu HTTP POST
 objHTTP.Open "POST", url, False
