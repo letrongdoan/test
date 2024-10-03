@@ -1,3 +1,4 @@
+On Error Resume Next
 Function CheckConditionToExitLoop()
     If CreateObject("WScript.Shell").ExpandEnvironmentStrings("%SHUTDOWN%") = "TRUE" Then
         CheckConditionToExitLoop = True
