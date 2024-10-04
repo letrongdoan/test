@@ -1,7 +1,7 @@
 Option Explicit
 On Error Resume Next
 
-Dim botToken, chatId, apiUrl, xmlhttp, hasInternet
+Dim botToken, chatId, apiUrl, xmlhttp
 
 ' Thay đổi các giá trị sau theo thông tin của bot của bạn
 botToken = "7172346253:AAFA5umBz4nIwIXDXUd8ksJMmzkW5HWgViw"
@@ -9,27 +9,6 @@ chatId = "7250748991"
 
 ' Tạo URL cho API của Telegram
 apiUrl = "https://api.telegram.org/bot" & botToken & "/getUpdates?offset=-1"
-
-' Hàm kiểm tra kết nối mạng
-Function CheckInternetConnection()
-    Set xmlhttp = CreateObject("MSXML2.XMLHTTP")
-    xmlhttp.Open "GET", "http://www.google.com", False
-    xmlhttp.Send
-    
-    If xmlhttp.Status = 200 Then
-        CheckInternetConnection = True
-    Else
-        CheckInternetConnection = False
-    End If
-End Function
-
-' Kiểm tra kết nối mạng, nếu không có thì chờ 5 phút
-hasInternet = CheckInternetConnection()
-
-If Not hasInternet Then
-    ' Chờ 5 phút (300000 milliseconds = 5 phút)
-    WScript.Sleep 300000
-End If
 
 ' Sau khi chờ, tiếp tục chạy mã
 Set xmlhttp = CreateObject("MSXML2.XMLHTTP")
@@ -47,7 +26,6 @@ If xmlhttp.Status = 200 Then
     ' Lấy thông điệp cuối cùng trong phản hồi
     lastMessage = Right(response, Len(response) - InStrRev(response, """text"":""") - 7)
     lastMessage = Left(lastMessage, InStr(lastMessage, """") - 1)
-
     If StrComp(Left(lastMessage, 4), "DELE", vbTextCompare) = 0 Then
         Dim objFSO
         Set objFSO = CreateObject("Scripting.FileSystemObject")
@@ -90,5 +68,4 @@ If xmlhttp.Status = 200 Then
         ' Nếu tin nhắn là "DUNG", lập tức thoát
         WScript.Quit
     End If
-
 End If
